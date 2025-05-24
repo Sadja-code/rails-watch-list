@@ -1,0 +1,9 @@
+<h1>Lists of Movies</h1>
+<% @lists.each do |list| %>
+<div class="card" style="width: 18rem;">
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item"><%= list.name %></li> <%= link_to "Details", list %>
+  </ul>
+</div>
+<% end %>
+
